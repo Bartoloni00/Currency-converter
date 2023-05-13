@@ -1,0 +1,82 @@
+:root{
+    --color-primario:#1794ee;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+h1{
+    color:var(--color-primario);
+    font-size: 2em;
+}
+p{
+    text-align: center;
+}
+.btn{
+    background-color:var(--color-primario);
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    padding: 10px 15px;
+    border: 1px solid #363636;
+}
+.conversor-img{
+    width: 200px;
+}
+.contenedor-moneda{
+    padding: 40px 0 10px 0;
+}
+.moneda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor-moneda p {
+    color: var(--color-primario);
+    font-weight: bold;
+    font-size: .8em;
+}
+.moneda select{
+    padding: 10px 20px 10px 10px;
+    border-radius: 1px solid #dedede;
+    font-size: 16px;
+}
+
+.moneda input{
+    border: 0;
+    font-size: 2em;
+    text-align: right;
+}
+
+.taza-de-cambio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+.cambio{
+    color: var(--color-primario);
+    font-size: 1em;
+    font-weight: bolder;
+    padding: 0 10px;
+    text-align: center;
+}
+select:focus, input:focus, button:focus{
+    outline: none;
+}
+
+@media (max-width:600px){
+    .moneda input{
+        width: 200px;
+    }
+}
